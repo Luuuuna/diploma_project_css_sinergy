@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,IAAK,CACD,UAAU,CAAE,IAAI",
+"mappings": "AAAA,IAAK,CACD,UAAU,CAAE,IAAI,CAChB,aAAa,CAAE,KAAK",
 "sources": ["../scss/blocks/map.scss"],
 "names": [],
 "file": "map.min.css"
