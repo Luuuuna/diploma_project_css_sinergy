@@ -5,6 +5,7 @@
         position: relative;
         max-width: 400px;
         margin-bottom: 20px;
+
         span {
             color: $GrayscaleBlack;
             font-size: 15px;
@@ -23,6 +24,7 @@
             background: #000;
         }
     }
+
     &__title {
         color: $Grayscale50;
         font-style: 36px;
@@ -30,5 +32,42 @@
         line-height: 140%;
         margin-bottom: 45px;
     }
-   
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: 300px;
+        margin-bottom: 110px;
+        gap: 10px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &__item {
+            position: relative;
+            span {
+                color: #fff;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 120%;
+                max-width: 390px;
+                position: absolute;
+                bottom: 30px;
+                left: 20px;
+                z-index: 1;
+            }
+        }
+
+        &__item1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        &__item2 {
+            grid-column-start: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    }
 }
