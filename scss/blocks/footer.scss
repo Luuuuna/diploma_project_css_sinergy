@@ -4,7 +4,7 @@
     background-color: $PrimaryBlue100;
     padding-top: 77px;
     padding-bottom: 40px;
-   
+
 
     &__container {
         display: flex;
@@ -12,12 +12,12 @@
         justify-content: space-between;
         min-height: 350px;
         padding-right: 170px;
-        
+
     }
 
     &__item {
-       display: flex;
-       justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
 
         &__text {
             color: #fff;
@@ -64,6 +64,7 @@
                 line-height: 150%;
             }
         }
+
         &__tel {
             font-size: 32px;
             color: #fff;
@@ -73,4 +74,73 @@
         }
     }
 
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+    .footer {
+        &__container {
+            padding-right: 0;
+        }
+
+        &__item {
+
+            &__text {
+                margin-bottom: 20px;
+            }
+
+            flex-direction: column;
+
+            &:last-child {
+                flex-direction: row;
+            }
+
+            &__form {
+                .button {
+                    margin-bottom: 80px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        &__container {
+            padding-right: 0;
+        }
+
+        &__item {
+
+            &__text {
+                margin-bottom: 20px;
+                font-size: 20px;
+            }
+
+            flex-direction: column;
+
+            &__form {
+                .button {
+                    margin-bottom: 80px;
+                }
+            }
+            &__logo {
+                font-size: 24px;
+            }
+            &__tel {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .footer {
+        &__item {
+            &__form {
+                input {
+                    width: 300px;
+                }
+            }
+        }
+    }
 }
