@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/about.min.css">
   <link rel="stylesheet" href="css/inf.min.css">
   <link rel="stylesheet" href="css/infr.min.css">
+  <link rel="stylesheet" href="css/photo.min.css">
   <link rel="stylesheet" href="css/pdf.min.css">
   <link rel="stylesheet" href="css/footer.min.css">
   <title>БК “Ясенево” | Главная</title>
@@ -100,7 +101,12 @@
         </section>
       </div>
       <section class="photo">
-        <img class="img" src="assets/images/img.png" alt="БК “Ясенево”">
+        <picture>
+          <source srcset="assets/images/img.png" type="image/png" media="(min-width: 1280px)">
+          <source srcset="assets/images/img2.png" type="image/png" media="(min-width: 768px)">
+          <source srcset="assets/images/img3.png" type="image/png" media="(max-width: 767px)">
+          <img class="img" src="assets/images/img.png" alt="БК “Ясенево”">
+        </picture>
       </section>
       <section class="infr">
         <div class="container">

@@ -70,6 +70,7 @@
 @media screen and (max-width: 767px) {
     .plans {
         grid-template-columns: 1fr;
+        justify-items: center;
         &__item {
             img {
                 width: 300px;

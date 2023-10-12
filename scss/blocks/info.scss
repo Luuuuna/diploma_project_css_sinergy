@@ -1,9 +1,9 @@
 @import'../variables';
 
 .info {
+    background: $PrimaryBlue100;
 
     &__grid {
-        background: $PrimaryBlue100;
         display: grid;
         grid-template-columns: 1fr 0.9fr;
         row-gap: 25px;
@@ -81,6 +81,7 @@
                 }
             }
         }
+
         &__desc {
             &__text {
                 font-size: 16px;
