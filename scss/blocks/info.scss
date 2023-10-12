@@ -64,7 +64,17 @@
 
     .info {
         &__grid {
+            padding: 51px 26px;
             grid-template-columns: 1fr;
+            &__item {
+                img {
+                    width: 70px;
+                    height: 70px;
+                }
+                span {
+                    font-size: 16px;
+                }
+            }
         }
        }
 
