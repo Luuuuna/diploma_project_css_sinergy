@@ -43,3 +43,23 @@
         padding-bottom: 100px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .about {
+        &__span {
+            span {
+                font-size: 12px;
+                &::after {
+                    width: 60%;
+                }
+            }
+        }
+        &__title {
+            font-size: 20px;
+        }
+        &__text {
+            font-size: 16px;
+        }
+    }
+   
+}

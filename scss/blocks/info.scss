@@ -1,7 +1,7 @@
 @import'../variables';
 
 .info {
-   
+
     &__grid {
         background: $PrimaryBlue100;
         display: grid;
@@ -28,12 +28,13 @@
             }
         }
     }
+
     &__desc {
         display: flex;
         flex-direction: column;
         max-width: 634px;
         float: right;
-      
+
 
         &__text {
             color: $Grayscale10;
@@ -42,22 +43,24 @@
             line-height: 160%;
             margin-bottom: 17px;
         }
+
         &__button {
             color: #fff;
             padding: 14px 32px;
             background: $PrimaryBlue100;
             width: 175px;
+            border: none;
         }
     }
-    
+
 }
 
 @media screen and (max-width: 1279px) and (min-width: 768px) {
-   .info {
-    &__grid {
-        grid-template-columns: 1fr;
+    .info {
+        &__grid {
+            grid-template-columns: 1fr;
+        }
     }
-   }
 }
 
 @media screen and (max-width: 767px) {
@@ -66,16 +69,23 @@
         &__grid {
             padding: 51px 26px;
             grid-template-columns: 1fr;
+
             &__item {
                 img {
                     width: 70px;
                     height: 70px;
                 }
+
                 span {
                     font-size: 16px;
                 }
             }
         }
-       }
+        &__desc {
+            &__text {
+                font-size: 16px;
+            }
+        }
+    }
 
 }

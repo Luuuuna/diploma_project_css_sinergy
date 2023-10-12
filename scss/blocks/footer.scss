@@ -120,7 +120,7 @@
 
             &__form {
                 .button {
-                    margin-bottom: 80px;
+                    margin-bottom: 140px;
                 }
             }
             &__logo {
@@ -136,10 +136,14 @@
 @media screen and (max-width: 350px) {
     .footer {
         &__item {
+            &__text {
+                font-size: 18px;
+            }
             &__form {
                 input {
                     width: 300px;
                 }
+              
             }
         }
     }

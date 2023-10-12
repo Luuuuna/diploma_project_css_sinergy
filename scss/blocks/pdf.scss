@@ -8,7 +8,7 @@
 
         span {
             color: $GrayscaleBlack;
-            font-size: 15px;
+            font-size: 16px;
             font-weight: 500;
             line-height: 150%;
             margin-right: 6px;
@@ -56,5 +56,38 @@
         font-weight: 500;
         line-height: 150%;
         margin-bottom: 136px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .pdf {
+        &__span {
+            span {
+                font-size: 12px;
+            }
+            &::after {
+                width: 70%;
+            }
+        }
+        &__title {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        &__item {
+            padding-left: 20px;
+            flex-direction: column;
+            align-items: flex-start;
+            ul {
+                font-size: 16px;
+                margin-bottom: 25px;
+            }
+            img {
+                width: 113px;
+                height: 113px;
+                margin-left: -15px;
+                margin-bottom: 36px;
+            }
+        }
     }
 }
